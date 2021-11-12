@@ -1,0 +1,26 @@
+﻿
+body {
+    background-image: url('titanic.jpg');
+}
+
+#top {
+    text-align: center;
+    font-family: Courier New, Courier, monospace;
+    color: #102128;
+    padding: 8px;
+}
+
+#middle {
+    text-align: left;
+    background-color: #203541;
+    padding: 30px;
+    border-radius: 18px;
+    margin: 5px;
+    width: 80%;
+    margin-left: 10%;
+    form-select-border-width: 20px;
+}
+
+.centered {
+    text-align:center;
+}

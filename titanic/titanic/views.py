@@ -16,11 +16,11 @@ def result(request):
     fare = int(request.GET["fare"])
     embarked = int(request.GET["embarked"])
     title = int(request.GET["title"])
-
+    
 
     prediction = ml_predict.prediction_model( pclass, user_sex, user_age, sibsp, parch, fare, embarked, title)
     if prediction ==1:
         survival = "You survived!"
     else:
         survival = "You didn't make it :("
-    return render(request, 'result.html', { 'prediction':survival})
+    return render(request, 'result.html', { 'survival':survival, 'prediction':prediction})
